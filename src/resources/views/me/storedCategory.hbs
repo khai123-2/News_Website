@@ -1,0 +1,27 @@
+<div class="mt-4 container">
+  <div class="mt-4">
+   <a href="/category/create" class="btn btn-primary" >Thêm thể loại</a>
+  </div>
+    <table class="table mt-4" >
+  <thead>
+    <tr>
+      <th scope="col">Thể loại</th>
+      <th scope="col" colspan="3">Thời gian tạo</th>
+    </tr>
+  </thead>
+  <tbody>
+     {{#each types}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td>{{this.createdAt}}</td>
+      <td><a href="/category/{{this._id}}/edit">Sửa</a></td>
+      <td>
+        <form method="POST" action="/category/{{this._id}}?_method=DELETE">
+         <input type="submit" value="Xóa">
+        </form>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

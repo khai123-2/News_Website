@@ -1,0 +1,59 @@
+
+<script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+
+<div class="container mt-4">
+    <h1>Sửa tin tức</h1>
+    <form action="/news/{{post._id}}?_method=PUT" method="POST" enctype="multipart/form-data" >
+    <input type="text" id="category_id" value="{{post.category_Id}}" hidden>
+        <div class="mb-3">
+            <label for="title" class="form-label">Tiêu đề</label>
+            <input type="text" class="form-control" id="title-form"  value="{{post.title}}" name="title">
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Mô tả</label>
+            <input type="text" class="form-control" id="description-form" value="{{post.description}}" name="description">
+        </div>
+        <div class="mb-3">
+            <label for="content-form" class="form-label">Nội dung</label>
+            <textarea class="form-control" id="conten-form"  name="content"rows="3">{{post.content}}</textarea>
+        </div>
+        <div class="mb-3">
+            <label for="author-form" class="form-label">Tác giả</label>
+            <input type="text" class="form-control" id="author-form" value="{{post.author}}" name="author">
+        </div>
+        <div class="mb-3">
+            <label for="thumnail" class="form-label">Chọn hình ảnh</label>
+            <input class="form-control" type="file" name="thumnail" id="thumnail-form">
+        </div>
+        <div class="mb-3">
+            <label for="category_Id" class="form-label" >Loại tin</label>
+            <select name="category_Id" class="form-select form-select-sm">
+                <option value="#">--Chọn loại tin--</option>
+                {{#each types}}
+                <option id="option-form" value="{{this._id}}">{{this.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Sửa tin tức</button>
+    </form>
+</div>
+<script>
+  ClassicEditor
+        .create( document.querySelector( '#conten-form' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+    // get option seleted
+    var input_categoryId = document.querySelector('#category_id');
+    document.querySelectorAll('#option-form').forEach(item => {
+       
+       const type_id = item.value;
+
+       if(input_categoryId.value == type_id ){
+
+           item.setAttribute('selected','selected');
+       }
+
+
+     })
+</script>

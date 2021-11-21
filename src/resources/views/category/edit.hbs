@@ -1,0 +1,10 @@
+<div class="container mt-4">
+    <h1>Sửa thể loại</h1>
+    <form action="/category/{{type._id}}?_method=PUT" method="POST" >
+        <div class="mb-3">
+            <label for="name" class="form-label">Tên thể loại</label>
+            <input type="text" class="form-control" value="{{type.name}}" id="name-form" name="name">
+        </div>
+        <button type="submit" class="btn btn-primary">Sửa thể loại</button>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+<div class="mt-4 container">
+  <div class="mt-4">
+   <a href="/news/create" class="btn btn-primary" >Đăng tin tức</a>
+  </div>
+    <table class="table mt-4">
+  <thead>
+    <tr>
+      <th scope="col">Tiêu đề</th>
+      <th scope="col">Tác giả</th>
+      <th scope="col" colspan="3">Thời gian tạo</th>
+    </tr>
+  </thead>
+  <tbody>
+     {{#each posts}}
+    <tr>
+      <td>{{this.title}}</td>
+      <td>{{this.author}}</td>
+      <td>{{this.createdAt}}</td>
+      <td><a href="/news/{{this._id}}/edit">Sửa</a></td>
+      <td>
+        <form method="POST" action="/news/{{this._id}}?_method=DELETE">
+         <input type="submit" value="Xóa">
+        </form>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

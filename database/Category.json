@@ -1,0 +1,131 @@
+[{
+  "_id": {
+    "$oid": "610363056a106235840ba0bd"
+  },
+  "name": "Khoa học",
+  "createdAt": {
+    "$date": "2021-07-30T02:25:09.411Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:25:09.411Z"
+  },
+  "slug": "khoa-hoc",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610363746a106235840ba0e8"
+  },
+  "name": "Xã hội",
+  "createdAt": {
+    "$date": "2021-07-30T02:27:00.241Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:27:00.241Z"
+  },
+  "slug": "xa-hoi",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6103637c6a106235840ba0f6"
+  },
+  "name": "Thế giới",
+  "createdAt": {
+    "$date": "2021-07-30T02:27:08.504Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:27:08.504Z"
+  },
+  "slug": "the-gioi",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610363826a106235840ba104"
+  },
+  "name": "Kinh doanh",
+  "createdAt": {
+    "$date": "2021-07-30T02:27:14.118Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:27:14.118Z"
+  },
+  "slug": "kinh-doanh",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6103638c6a106235840ba112"
+  },
+  "name": "Giải trí",
+  "createdAt": {
+    "$date": "2021-07-30T02:27:24.320Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:27:24.320Z"
+  },
+  "slug": "giai-tri",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610363936a106235840ba120"
+  },
+  "name": "Thể thao",
+  "createdAt": {
+    "$date": "2021-07-30T02:27:31.905Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:27:31.905Z"
+  },
+  "slug": "the-thao",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6103639a6a106235840ba12e"
+  },
+  "name": "Sức khỏe",
+  "createdAt": {
+    "$date": "2021-07-30T02:27:38.144Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:27:38.144Z"
+  },
+  "slug": "suc-kh-e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610363a16a106235840ba13c"
+  },
+  "name": "Văn hóa",
+  "createdAt": {
+    "$date": "2021-07-30T02:27:45.206Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:27:45.206Z"
+  },
+  "slug": "van-hoa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610363a76a106235840ba14a"
+  },
+  "name": "Giáo dục",
+  "createdAt": {
+    "$date": "2021-07-30T02:27:51.443Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:27:51.443Z"
+  },
+  "slug": "giao-duc",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610363ac6a106235840ba158"
+  },
+  "name": "Pháp luật",
+  "createdAt": {
+    "$date": "2021-07-30T02:27:56.689Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:27:56.689Z"
+  },
+  "slug": "phap-luat",
+  "__v": 0
+}]

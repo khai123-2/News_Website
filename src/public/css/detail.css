@@ -1,0 +1,12 @@
+.post-content img {
+  width: 100%; }
+
+@media (min-width: 48em) and (max-width: 63.9375em) {
+  .description h3 {
+    font-size: 26px;
+    line-height: 37px; } }
+
+@media (max-width: 47.9375em) {
+  .description h3 {
+    font-size: 18px;
+    line-height: 26px; } }

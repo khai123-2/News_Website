@@ -1,0 +1,111 @@
+<div class="mt-3">
+    <div class="row">
+        {{!-- content left --}}
+        <div class="col col-lg-8 col-sm-12 col-md-12">
+            <div class="trending-left">
+                <div class="trending-top-news">
+                    {{!-- <a href="{{news.slug}}"><img src="{{news.thumnail}}" alt="hinhanh"></a> --}}
+                    <a href="{{news.slug}}">
+                        <div style="background-image: url(/{{news.thumnail}});" class="image-thumb">
+                        </div>
+                    </a>
+                    <div class="banner-content">
+                        <h2> <a href="{{news.slug}}">{{news.title}}</a></h2>
+                    </div>
+                </div>
+                <div class="trend-top-cap">
+                    <div class="article-news">
+                        <div class="row">
+                            {{#each old}}
+                            <div class="col-12 col-lg-4 col-md-4 col-sm-4">
+                                <div class="posts-item">
+                                    <div class="thumnail-post">
+                                    <a href="{{this.slug}}">
+                                        <div style="background-image: url(/{{this.thumnail}});" class="thumnail-post-images">
+                                        </div>
+                                    </a>
+                                    </div>
+                                    <div class="description-post">
+                                        <a href="{{this.slug}}">
+                                            <p>{{this.title}}</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 right-content">
+            {{!-- content right (sidebar)--}}
+            {{> sidebar Sidebar=sidebar}}
+        </div>
+    </div>
+    
+    <div class="section-news mt-5">
+     <div class="section-tiltle">
+       <h3>Thể thao</h3>
+     </div>
+     <div class="row">
+         {{#each sport}}
+         <div class="col-12 col-lg-3 col-sm-6 col-md-6 post-news">
+             <div class="thumb-art">
+                <a href="{{this.slug}}">
+                    <div style="background-image: url(/{{this.thumnail}});" class="thumnail-art-images">
+                    </div>
+                </a>
+             </div>
+             <div class="font-weight-bold mt-3">
+                 <h5><a href="{{this.slug}}">{{this.title}}</a></h5>
+             </div>
+         </div>
+         {{/each}}
+     </div>
+    </div>
+
+    <div class="section-news mt-5">
+     <div class="section-tiltle">
+       <h3>Xã hội</h3>
+     </div>
+     <div class="row">
+         {{#each social}}
+         <div class="col-12 col-lg-3 col-sm-6 col-md-6 post-news">
+             <div class="thumb-art">
+                <a href="{{this.slug}}">
+                    <div style="background-image: url(/{{this.thumnail}});" class="thumnail-art-images">
+                    </div>
+                </a>
+             </div>
+             <div class="font-weight-bold mt-3">
+                 <h5><a href="{{this.slug}}">{{this.title}}</a></h5>
+             </div>
+         </div>
+         {{/each}}
+     </div>
+    </div>    
+
+    <div class="section-news mt-5">
+     <div class="section-tiltle">
+       <h3>Giả trí</h3>
+     </div>
+     <div class="row">
+         {{#each showbiz}}
+         <div class="col-12 col-lg-3 col-sm-6 col-md-6 post-news">
+            <div class="thumb-art">
+                <a href="{{this.slug}}">
+                    <div style="background-image: url(/{{this.thumnail}});" class="thumnail-art-images">
+                    </div>
+                </a>
+            </div>
+             <div class="font-weight-bold mt-3">
+                 <h5><a href={{this.slug}}">{{this.title}}</a></h5>
+             </div>
+         </div>
+         {{/each}}
+     </div>
+    </div>    
+
+
+</div>

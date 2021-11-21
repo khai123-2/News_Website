@@ -1,0 +1,9 @@
+[{
+  "_id": {
+    "$oid": "60fb8dd57026fe5201b55a97"
+  },
+  "name": "Khải Trần",
+  "phone": "01682689851",
+  "email": "tranquangkhai0910@gmail.com",
+  "password": "khaitran123"
+}]
